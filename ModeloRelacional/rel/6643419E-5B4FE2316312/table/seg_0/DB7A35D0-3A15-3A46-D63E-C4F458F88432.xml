@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB7A35D0-3A15-3A46-D63E-C4F458F88432" name="cupon">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>EA877D91-3C56-B8FD-1A71-C62FAD0060B8</importedID>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cupones" id="A066D93F-6E1F-893E-4FBD-23E539EFEA20">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>4D9FDD18-89B9-C2D9-24D2-EA27A253ACA5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_cupon" id="9F728F27-C430-F771-6C38-06AFA4D35F80">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>AA6185F1-D192-BB38-86D2-8D2320D5EFBA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fech_venci" id="42120B29-07B7-FC1C-B3E4-A5F1C2B08F15">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>FAEE55E6-204F-2FF3-87A8-71F2B1A0AF86</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="criterio" id="1A316B05-0AB1-9D12-0B07-3EBB3856C7F0">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>09F3B190-AF8F-90B0-F33C-5BD02A09CC23</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cliente_cedula" id="CED82E0C-04B8-0951-0C13-172A44756750">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>22003CA6-1102-F3E6-C4A7-98F7BB659B93</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA73F362-3094-9E33-E230-42B8BB74B2E5" referredColumn="D625B000-7F14-ACFD-8825-0C5E9BF5053A"/>
+</associations>
+</Column>
+<Column name="estado" id="9F592ED7-14D7-9C40-5C84-3AE46F9BB88A">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:42:39 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E85F1103-CE59-D889-7877-3DA853AA49FD" name="cupones_PK">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>ADBC55D9-78D0-4B9F-F183-0683E7E6F0F3</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A066D93F-6E1F-893E-4FBD-23E539EFEA20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B80EC0E-2DB8-33EA-5F7D-30405D417C21" name="cupones_Cliente_FK">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CED82E0C-04B8-0951-0C13-172A44756750"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="700FE7E3-9DEE-F6C6-D86C-4177B7914D6E" name="confiteria">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>9BFACB77-55CC-025A-1179-377571B2436D</importedID>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_confiteria" id="E43CFE86-21AC-CED2-856A-B1DAB967E35F">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>84CFF312-C6FA-568A-6908-37E020368B55</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="C784C986-08C8-54A4-3021-A96418FBE9FC">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>1CCBFC4F-D212-B76A-27E5-7022B6FA186F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio" id="8BBF41B9-ABA9-0C79-A909-48D90236ACE6">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>D158F9B3-DD75-853A-474C-A21B398D0CB3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="img" id="F00E1F3D-18FA-DC35-6FE0-D7E3ECE26A77">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>C6158854-2C01-8DCB-F95D-F038A526309D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EFD7E2FF-03A3-14B8-8338-C39E464EFEB5" name="confiteria_PK">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>8EEEB7E8-EB1E-1BCA-DC50-E5172D0AD78E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E43CFE86-21AC-CED2-856A-B1DAB967E35F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

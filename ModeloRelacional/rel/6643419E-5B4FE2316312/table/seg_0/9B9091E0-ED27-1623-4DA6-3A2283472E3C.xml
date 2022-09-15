@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9B9091E0-ED27-1623-4DA6-3A2283472E3C" name="administrador">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>BDEBF27F-D143-A200-B5CD-64034C41C5C8</importedID>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_admin" id="92B06A83-32FB-8472-4616-450EA599F1EC">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>99933C8F-F91B-33F6-20D6-4F0253BF8CD9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="EA469206-B342-9BB8-3BB2-DC556D40794B">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>54044C84-5A46-988C-B21C-9E8F45DDD4B8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contra" id="C79E2B1B-EDA4-62E6-41E8-D9C2BBA7AD00">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:52:45 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="94E4683C-7C1F-E7C7-44DB-75F22A1E2053" name="administrador_PK">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>34FC3CBB-0F21-124D-C606-C9986A4ADCEE</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92B06A83-32FB-8472-4616-450EA599F1EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

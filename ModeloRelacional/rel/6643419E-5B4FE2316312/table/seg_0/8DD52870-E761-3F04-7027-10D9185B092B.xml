@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8DD52870-E761-3F04-7027-10D9185B092B" name="tarjeta">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:48 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>533B80F9-6E5D-BFF0-A574-B0F82613E33F</importedID>
+<ordsAlias>table_31</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tarjeta" id="71176E40-B982-2328-5207-9CB991CDAE42">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>A92E70B7-7ECA-5A48-4CCE-28BC617599DB</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="CD6732A5-D929-56C6-7283-C57B1E9B87D4">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>0C692B48-7A29-93E9-8BA1-56E6949FFCCB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="porcentaje" id="8F1D4AFA-2BDF-2B06-8764-A6FD386A91B1">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-10 04:03:15 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CFB840D7-8964-7A4A-8429-797E510AB0EB" name="tarjeta_PK">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>DA489687-FB65-BBAA-5CFF-05E3ABD81F00</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71176E40-B982-2328-5207-9CB991CDAE42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

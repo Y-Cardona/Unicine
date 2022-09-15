@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="75E43386-FF95-15AC-4649-6024E01B687E" name="admin_teatr">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:50:13 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<ordsAlias>table_27</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_admin_teatro" id="36553CA0-15E3-0843-0AE9-762FF9EBB57E">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:50:47 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="A67B3381-F0A3-1D29-9604-B68CAE48EDAD">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:53:55 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contra" id="E618734A-9377-8443-5B04-B612BB10321B">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:53:55 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="561464C6-4342-5D5C-24B5-6F347CA520A1" name="admin_teatr_PK">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:50:47 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36553CA0-15E3-0843-0AE9-762FF9EBB57E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

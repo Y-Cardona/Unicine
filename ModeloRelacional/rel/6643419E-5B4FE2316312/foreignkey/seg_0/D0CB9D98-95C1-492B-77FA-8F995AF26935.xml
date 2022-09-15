@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D0CB9D98-95C1-492B-77FA-8F995AF26935" containerWithKeyObject="11C2CB27-A04C-578F-96DF-2487256C9C6C" localFKIndex="C05A6A1F-683E-3E33-4823-828E69A76F55" name="entradas_hora_peli_FK">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:46:43 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2398FDC5-F1EA-C2B1-A7E8-1FC6A2D5E232</referredTableID>
+<keyObject>F45207A2-697C-665F-E100-CD2B06D45627</keyObject>
+<referredKeyID>F45207A2-697C-665F-E100-CD2B06D45627</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

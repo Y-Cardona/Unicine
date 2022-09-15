@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D113494B-9508-B647-0554-2DA4541F4A9A" name="factura">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>B7A33505-8BB4-E904-365E-6E4A4B28CBD4</importedID>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_factura" id="3FACC880-F56A-1E57-BAC7-61E56FD5D659">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>399EF7D0-2F5B-FED1-044E-C05ECE9F0C6E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="confi_cli_id_confi_cli" id="ECCB7AB7-E6F8-217F-DE0C-CEDC2715AF78">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>FE171B6C-7A22-0664-CB8F-C92385423C26</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="entradas_id_entrada" id="44B65CD5-2743-FC2D-86BC-54E09EB03102">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>09A5C526-79ED-2A0A-D445-E8283BF4EAC2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cupones_id_cupones" id="A949C53F-49D4-7FCD-1B8B-D1823B157B8A">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>9642830C-BEA5-AF23-DC97-56905B44C10F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B4E0DBE-3D85-1C92-75B8-43AF917929B2" referredColumn="A066D93F-6E1F-893E-4FBD-23E539EFEA20"/>
+</associations>
+</Column>
+<Column name="cliente_cedula" id="328AA97A-F62B-CB5F-D8AC-E9140D176B6E">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:24:01 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C989398-1910-FBCA-1AF6-DE5434A59FEF" referredColumn="D625B000-7F14-ACFD-8825-0C5E9BF5053A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C0ACFA79-94DD-689B-3A17-C81ADC5777F5" name="factura_PK">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>CEBE0962-8826-556D-8536-EECADB2D2633</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FACC880-F56A-1E57-BAC7-61E56FD5D659"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23F63B75-74C3-2064-B2EC-83E05C3BCF83" name="factura__UN">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-08 00:05:33 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A949C53F-49D4-7FCD-1B8B-D1823B157B8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7DE3DF78-A0B1-AD62-7B20-EACAFA1DC06E" name="factura_cupones_FK">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A949C53F-49D4-7FCD-1B8B-D1823B157B8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53DCD9D0-6574-2500-99B6-D25A808930D2" name="factura_Cliente_FK">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:24:01 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="328AA97A-F62B-CB5F-D8AC-E9140D176B6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

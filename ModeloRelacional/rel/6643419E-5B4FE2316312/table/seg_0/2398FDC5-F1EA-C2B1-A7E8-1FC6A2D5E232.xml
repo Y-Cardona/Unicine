@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2398FDC5-F1EA-C2B1-A7E8-1FC6A2D5E232" name="funcion">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:45:09 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<ordsAlias>table_25</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_funcion" id="FEFCF44C-3DBB-F9B3-3B6C-0D9E0740B9B3">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:45:46 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pelicula_id_pelicula" id="D50D2AEE-D81D-5698-95C7-AF337F1B9AC3">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:45:57 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F9C9D15-40F7-2B09-B35B-6F5A8507CCEE" referredColumn="8FD0DF8B-F38F-8A68-62F4-C13445D931DD"/>
+</associations>
+</Column>
+<Column name="horario_id_hora " id="97094035-4D72-F334-565B-083E5E0B0E75">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:46:03 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ACE42728-312F-3EA2-3E10-4002DFD002A8" referredColumn="F56FA261-79C3-A4A1-AD98-FB193BA23A50"/>
+</associations>
+</Column>
+<Column name="sala_id_sala" id="249BBFA3-E650-FC95-CF82-E16CAD641523">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-08 00:09:13 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D220104-3DA6-5B02-F67B-798D926DA7A7" referredColumn="5E60B901-3FCD-1C3F-F5C0-6A8E7C1830C8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F45207A2-697C-665F-E100-CD2B06D45627" name="hora_peli_PK">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:45:46 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEFCF44C-3DBB-F9B3-3B6C-0D9E0740B9B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D87C15E-44C6-F4B1-F2AA-A534DB869A69" name="hora_peli_pelicula_FK">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:45:57 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D50D2AEE-D81D-5698-95C7-AF337F1B9AC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="92BAC6F0-0A47-A008-A338-3182117EA7A8" name="hora_peli_horario_FK">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:46:03 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97094035-4D72-F334-565B-083E5E0B0E75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="683D2759-45E3-4D00-17B6-A9362E8F6726" name="funcion_sala_FK">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-08 00:09:13 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="249BBFA3-E650-FC95-CF82-E16CAD641523"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

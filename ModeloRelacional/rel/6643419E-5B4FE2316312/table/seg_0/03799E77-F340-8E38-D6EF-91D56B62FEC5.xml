@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="03799E77-F340-8E38-D6EF-91D56B62FEC5" name="Telefono">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:48 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>2E819A7A-5F4C-2D4A-B78E-FD903762DF0B</importedID>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_telefono" id="ED6FAB73-5898-D256-8569-F041AD5D3116">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>B8F23A9D-6DB4-B347-BBA7-A3E65CF413D1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero" id="83F1C60D-17C4-F4DC-8404-D9F005A142E3">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>6B6BCA8E-87B6-CF08-2C75-5F4101E5F7A2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="F3A37E8E-4F55-4324-51E0-16E6B2EEC9C9">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>FA7B5D2D-0576-AFE9-5642-F1AFFC1BBAF4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cliente_cedula" id="99BE1AAB-11D1-497E-08EF-BB84DE243ABB">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>D80F1AC9-6553-F9D9-CAAE-07A7ED17FBF1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3AAB756E-4624-71D0-FD60-96CFF2061453" referredColumn="D625B000-7F14-ACFD-8825-0C5E9BF5053A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AE66D95B-3645-A9C4-27FC-0F66A74D91E0" name="Telefono_PK">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>5A384EB4-7556-7E60-9D5F-34E6973F0542</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED6FAB73-5898-D256-8569-F041AD5D3116"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CFA81317-F9F1-6DF4-FEEB-CA51819065E7" name="Telefono_Cliente_FK">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99BE1AAB-11D1-497E-08EF-BB84DE243ABB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

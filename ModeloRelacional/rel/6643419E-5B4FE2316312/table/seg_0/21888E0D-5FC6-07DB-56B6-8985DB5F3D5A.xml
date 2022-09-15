@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="21888E0D-5FC6-07DB-56B6-8985DB5F3D5A" name="ubica_silla">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:48 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>8110C59E-A9D1-D42C-E9FC-FDD4CA8ADF9E</importedID>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_ubica" id="ABECE215-3645-AC99-D763-2F0B3B785247">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>3C4A9730-1BBB-4F8A-9F2A-43D5AF9F8500</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="distribu_silla_id_distribu_silla" id="DD2A2B40-CB0A-B1AB-50F8-98EF2C560123">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:31:27 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BA020AB7-92D7-5B74-5257-66D2D288D217" referredColumn="2AEAA14D-FF96-E6F5-8450-68B3C1CEA736"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E0429CB1-C37C-88BB-161E-D25A3FE21799" name="ubicacion_PK">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:08:49 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<importedID>362CD999-CEEA-15B6-A55C-6D27E9CFC859</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABECE215-3645-AC99-D763-2F0B3B785247"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11CDD8AD-7D34-5C0A-6F92-D8438313B339" name="ubica_silla_distribu_silla_FK">
+<createdBy>usuario</createdBy>
+<createdTime>2022-09-07 23:31:27 UTC</createdTime>
+<ownerDesignName>ModeloFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD2A2B40-CB0A-B1AB-50F8-98EF2C560123"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
