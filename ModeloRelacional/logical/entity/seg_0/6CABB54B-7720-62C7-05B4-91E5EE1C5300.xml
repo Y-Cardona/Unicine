@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6CABB54B-7720-62C7-05B4-91E5EE1C5300" name="pelicula">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>121F828E-CB1F-97A4-6D2C-42B9E0E56335</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id pelicula" id="E1F786EF-9D62-36C7-75E3-E87BBDC2762D">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>8FD0DF8B-F38F-8A68-62F4-C13445D931DD</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="CCA2FCAC-9F12-B698-8235-B5DBC2D6838C">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>B995C0AF-8E9D-946B-8371-EA391848BD1E</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="trailer" id="A1F7B168-9AF9-3F91-C81F-04838E18F736">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>71005A2A-D237-6FD4-022E-B1024D422867</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="img" id="15EC0172-B6E2-8411-0B2C-B1D06944F05E">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>5965720D-7296-669F-56C7-9150DC156D5C</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sinopsis" id="0990CB9B-D7A0-4D87-0653-BC45E3978D7B">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>672EE596-6106-2F38-5608-4738260A5445</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="E0DD5E33-9FC0-B8A1-11E6-53E65CF1891E">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>8808AF13-AE94-CF13-5903-5D7ECBDF243C</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="2012CE91-E5C5-E862-7580-A2DBDDFC30FB">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>6A09C4CE-E643-8440-50DD-DDEF4DE49134</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reparto" id="62FBE90F-8424-6596-9FA8-BAF389358B1C">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>D8ABF8D9-91FC-7235-BC0F-879A5E81DC34</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2390A071-FDF9-31B7-DF06-93848BE403D9" name="pelicula PK">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>6AD7FFFC-7757-ADC3-ACDC-630BBC8C995F</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E1F786EF-9D62-36C7-75E3-E87BBDC2762D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

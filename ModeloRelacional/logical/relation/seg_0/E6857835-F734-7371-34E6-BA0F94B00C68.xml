@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ubica_silla_distribu_silla_FK" directorySegmentName="seg_0" id="E6857835-F734-7371-34E6-BA0F94B00C68">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>BA020AB7-92D7-5B74-5257-66D2D288D217</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<sourcePk>48F3F25B-8CA6-9731-2AA9-7FB1E95BAC23</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2799FDE0-7A93-2D2E-7C04-DFD785CF2CB9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CA10F4A1-D66D-A024-A1C6-5674B82FBFE4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

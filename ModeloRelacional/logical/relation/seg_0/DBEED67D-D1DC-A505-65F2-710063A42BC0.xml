@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="factura_cupones_FK" directorySegmentName="seg_0" id="DBEED67D-D1DC-A505-65F2-710063A42BC0">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>7B4E0DBE-3D85-1C92-75B8-43AF917929B2</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<sourcePk>DBDA477D-CCBD-B734-C7B5-17A26285BF46</sourcePk>
+<dominantRole>FA10689F-DB5D-C21D-2319-8CA4D6F8983D</dominantRole>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FA10689F-DB5D-C21D-2319-8CA4D6F8983D</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>D3CE3342-5F95-166B-81E0-6245D8DFBFDB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

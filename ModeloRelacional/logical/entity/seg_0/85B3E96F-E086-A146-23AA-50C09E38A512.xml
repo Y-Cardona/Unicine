@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="85B3E96F-E086-A146-23AA-50C09E38A512" name="tarjeta">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>8DD52870-E761-3F04-7027-10D9185B092B</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id tarjeta" id="2BF5708D-6463-1D11-DE61-4A6E342F0E4F">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>71176E40-B982-2328-5207-9CB991CDAE42</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="E3A6B294-9A8E-17D3-5D84-97DBFA976D40">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>CD6732A5-D929-56C6-7283-C57B1E9B87D4</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="porcentaje" id="563A11CC-38B6-8417-91C9-1BF5B2C22554">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>8F1D4AFA-2BDF-2B06-8764-A6FD386A91B1</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cliente cedula" id="3E0D9F83-409E-2325-7274-B5EC9E274567">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>22CE0CAA-21EA-CDE3-DE94-3EA000647D09</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<referedAttribute>5AB0AE05-B5FD-7270-4472-E34309FA5A21</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C3745C4C-D237-5117-64FD-014D8D99291F" name="tarjeta PK">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>CFB840D7-8964-7A4A-8429-797E510AB0EB</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2BF5708D-6463-1D11-DE61-4A6E342F0E4F</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="DA862DF9-4A3F-F0F5-1931-6371867BB49E" name="tarjeta  UN">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>572474EC-F260-C505-849D-41CD25220BDD</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>3E0D9F83-409E-2325-7274-B5EC9E274567</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

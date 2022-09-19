@@ -104,9 +104,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="EB2F050C-DE82-4195-F83B-F9AAE938235D" referredColumn="71176E40-B982-2328-5207-9CB991CDAE42"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -130,16 +127,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="FC86264E-F9FF-1B7A-1163-C9BEDFD02D4F"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="6C720B0A-2C64-38B9-DB20-FFA57D0329BD" name="Cliente_tarjeta_FK">
-<createdBy>usuario</createdBy>
-<createdTime>2022-09-07 23:08:49 UTC</createdTime>
-<ownerDesignName>ModeloFinal</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="DE89C6A8-CA9D-9C79-F721-8DB58142FAA7"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

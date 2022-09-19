@@ -43,6 +43,20 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="Cliente_cedula" id="6FBD3C51-3A93-D4CE-549D-C0E41746CA8C">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:09:10 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B04560E-A6FC-3902-187B-851E63E3862E" referredColumn="D625B000-7F14-ACFD-8825-0C5E9BF5053A"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="CFB840D7-8964-7A4A-8429-797E510AB0EB" name="tarjeta_PK">
@@ -55,6 +69,26 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="71176E40-B982-2328-5207-9CB991CDAE42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="572474EC-F260-C505-849D-41CD25220BDD" name="tarjeta__UN">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:09:52 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FBD3C51-3A93-D4CE-549D-C0E41746CA8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B20F9FF-C14A-580C-DE7B-143593A1756F" name="tarjeta_Cliente_FK">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:09:10 UTC</createdTime>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FBD3C51-3A93-D4CE-549D-C0E41746CA8C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

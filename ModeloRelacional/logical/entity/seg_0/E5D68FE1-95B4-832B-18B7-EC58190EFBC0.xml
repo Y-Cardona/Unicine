@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E5D68FE1-95B4-832B-18B7-EC58190EFBC0" name="administrador">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>9B9091E0-ED27-1623-4DA6-3A2283472E3C</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id admin" id="5EF818A2-1F01-D3A7-9101-3E9568849F40">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>92B06A83-32FB-8472-4616-450EA599F1EC</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="B159A61C-8C0B-B431-86CE-B97271FE6434">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>EA469206-B342-9BB8-3BB2-DC556D40794B</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contra" id="E74608A9-6653-1BE7-C8DD-E9F3F81FE220">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>C79E2B1B-EDA4-62E6-41E8-D9C2BBA7AD00</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0C5CA6A3-312F-DB97-ED4E-E945F1780FBF" name="administrador PK">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>94E4683C-7C1F-E7C7-44DB-75F22A1E2053</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5EF818A2-1F01-D3A7-9101-3E9568849F40</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

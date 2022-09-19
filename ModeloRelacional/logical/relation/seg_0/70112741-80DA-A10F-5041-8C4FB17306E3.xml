@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="distribu_silla_sala_FK" directorySegmentName="seg_0" id="70112741-80DA-A10F-5041-8C4FB17306E3">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>3554D027-42E1-59CB-C79A-F9288CB71079</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<sourcePk>466EDE3B-FEF8-724D-99E6-DDB733D19A4E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1365561F-2B25-8354-CAF8-0A965B728A19</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2799FDE0-7A93-2D2E-7C04-DFD785CF2CB9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

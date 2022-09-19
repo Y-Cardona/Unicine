@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="cupones_Cliente_FK" directorySegmentName="seg_0" id="ABA3767D-E5DB-0578-E4A2-626A5B638ED1">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>AA73F362-3094-9E33-E230-42B8BB74B2E5</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<sourcePk>CE165414-5AF6-EB68-E052-984B7483FE5C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A099030F-D673-D3F7-C6A0-587C2393E966</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FA10689F-DB5D-C21D-2319-8CA4D6F8983D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

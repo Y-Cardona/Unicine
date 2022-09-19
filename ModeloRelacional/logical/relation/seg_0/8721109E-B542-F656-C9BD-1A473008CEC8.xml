@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="funcion_sala_FK" directorySegmentName="seg_0" id="8721109E-B542-F656-C9BD-1A473008CEC8">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>4D220104-3DA6-5B02-F67B-798D926DA7A7</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<sourcePk>466EDE3B-FEF8-724D-99E6-DDB733D19A4E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1365561F-2B25-8354-CAF8-0A965B728A19</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>50011809-E48D-8C5B-C2FF-86ACCAB3E2B2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

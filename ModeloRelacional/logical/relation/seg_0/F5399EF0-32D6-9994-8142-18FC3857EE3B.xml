@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="sala_teatro_FK" directorySegmentName="seg_0" id="F5399EF0-32D6-9994-8142-18FC3857EE3B">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>18DFAE50-2AB5-BFBE-731C-D6FFE56DBAE7</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<sourcePk>70A79973-E22E-85C0-5966-0BD7AFA35356</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EBBE63D6-D841-E9D8-D08B-4A9C412D5DA6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1365561F-2B25-8354-CAF8-0A965B728A19</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

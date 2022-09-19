@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="factura_Cliente_FK" directorySegmentName="seg_0" id="0085ACF7-7C81-7D31-14BB-D04F3E55217E">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>1C989398-1910-FBCA-1AF6-DE5434A59FEF</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<sourcePk>CE165414-5AF6-EB68-E052-984B7483FE5C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A099030F-D673-D3F7-C6A0-587C2393E966</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D3CE3342-5F95-166B-81E0-6245D8DFBFDB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

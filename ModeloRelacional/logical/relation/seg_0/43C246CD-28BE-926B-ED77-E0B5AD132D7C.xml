@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="hora_peli_pelicula_FK" directorySegmentName="seg_0" id="43C246CD-28BE-926B-ED77-E0B5AD132D7C">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>6F9C9D15-40F7-2B09-B35B-6F5A8507CCEE</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<sourcePk>2390A071-FDF9-31B7-DF06-93848BE403D9</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6CABB54B-7720-62C7-05B4-91E5EE1C5300</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>50011809-E48D-8C5B-C2FF-86ACCAB3E2B2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

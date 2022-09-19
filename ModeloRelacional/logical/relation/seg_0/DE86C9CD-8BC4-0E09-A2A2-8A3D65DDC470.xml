@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="confi_cli_confiteria_FK" directorySegmentName="seg_0" id="DE86C9CD-8BC4-0E09-A2A2-8A3D65DDC470">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>D1A58153-0ED5-75B8-4AC7-FBE37C7617ED</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<sourcePk>C2D24DCF-E456-3F86-8747-C7473EFD3E35</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>228E2245-D113-4E91-7D8C-9C25DC09A126</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8C1FAD8A-4DAC-91F6-5A72-10581E2E8689</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

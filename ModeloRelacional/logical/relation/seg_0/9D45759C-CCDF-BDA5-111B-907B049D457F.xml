@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="entradas_hora_peli_FK" directorySegmentName="seg_0" id="9D45759C-CCDF-BDA5-111B-907B049D457F">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>D0CB9D98-95C1-492B-77FA-8F995AF26935</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<sourcePk>44616733-2788-D83C-DF13-689A532AAE49</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>50011809-E48D-8C5B-C2FF-86ACCAB3E2B2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3139A3AC-CD2D-9FEA-0A8F-A65709FD3D95</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

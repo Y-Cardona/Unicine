@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="entradas_ubicacion_FK" directorySegmentName="seg_0" id="3F8BDF84-A71F-721E-8B3D-490CF87071E6">
+<createdBy>yefer</createdBy>
+<createdTime>2022-09-19 21:31:24 UTC</createdTime>
+<generatorID>36E1D843-7174-3C42-B425-2603037CDDBF</generatorID>
+<ownerDesignName>ModeloRelacional</ownerDesignName>
+<engineerTo>
+<item key="6643419E-E487-844D-1E24-5B4FE2316312" value="true"/>
+</engineerTo>
+<sourcePk>EC5355CB-B0BC-62C7-CD2C-18FEC33C605B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CA10F4A1-D66D-A024-A1C6-5674B82FBFE4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3139A3AC-CD2D-9FEA-0A8F-A65709FD3D95</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

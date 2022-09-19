@@ -30,9 +30,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="69777289-45E7-343B-E439-60763E5EB525" referredColumn="8FD0DF8B-F38F-8A68-62F4-C13445D931DD"/>
-</associations>
 </Column>
 <Column name="cantidad_entrada_DUDA" id="79C098E6-4A94-272F-B647-E4255BFEF1FF">
 <createdBy>usuario</createdBy>
@@ -56,9 +53,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="CCC7C177-C119-7658-27F5-1D4603532D71" referredColumn="D625B000-7F14-ACFD-8825-0C5E9BF5053A"/>
-</associations>
 </Column>
 <Column name="ubicacion_id_ubicacion" id="E8CCC2D6-199D-FFA7-1DD1-FE7F97314CB3">
 <createdBy>usuario</createdBy>
@@ -114,26 +108,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A3038891-E104-F818-262A-DACD2601E701"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="E641EEF9-7F40-4E79-2DA6-70A5451E88FF" name="entradas_pelicula_FK">
-<createdBy>usuario</createdBy>
-<createdTime>2022-09-07 23:08:49 UTC</createdTime>
-<ownerDesignName>ModeloFinal</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="8F596F7D-C91A-FEC8-D7D6-4C5BC6ED5560"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="BBC6659D-506A-E28F-E155-44F9210BC4BF" name="entradas_Cliente_FK">
-<createdBy>usuario</createdBy>
-<createdTime>2022-09-07 23:08:49 UTC</createdTime>
-<ownerDesignName>ModeloFinal</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="F25ED081-B474-1935-1F8C-9C1B04F759C4"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="29DF0406-075E-812C-7433-6D7015232FFE" name="entradas_ubicacion_FK">
