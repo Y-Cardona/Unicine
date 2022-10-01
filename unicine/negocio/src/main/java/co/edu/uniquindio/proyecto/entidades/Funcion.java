@@ -2,17 +2,14 @@ package co.edu.uniquindio.proyecto.entidades;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
 @Entity
 public class Funcion implements Serializable {
 
@@ -21,4 +18,22 @@ public class Funcion implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @ManyToOne
+    private Sala sala;
+
+    @OneToMany(mappedBy = "funcion")
+    private List<Entrada> entradas;
+
+    @ManyToOne
+    private Horario horario;
+
+    @ManyToOne
+    private Pelicula pelicula;
+
+    @Builder
+    public Funcion(Sala sala, Horario horario, Pelicula pelicula) {
+        this.sala = sala;
+        this.horario = horario;
+        this.pelicula = pelicula;
+    }
 }

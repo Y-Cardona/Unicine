@@ -4,14 +4,14 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
 @Entity
-public class Pelilcula implements Serializable {
+public class Pelicula implements Serializable {
 
     @Id
     @EqualsAndHashCode.Include
@@ -32,4 +32,25 @@ public class Pelilcula implements Serializable {
 
     @Column(name = "reparto", length = 255, nullable = false)
     private String reparto;
+
+    @ElementCollection
+    private List<Genero> generos;
+
+    @OneToMany(mappedBy = "pelicula")
+    private List<Funcion> funciones;
+
+    @OneToOne
+    private Imagen imagen;
+
+    @Builder
+    public Pelicula(String nombre, String trailer, String sinopsis, String estado, String reparto,
+                    List<Genero> generos, Imagen imagen) {
+        this.nombre = nombre;
+        this.trailer = trailer;
+        this.sinopsis = sinopsis;
+        this.estado = estado;
+        this.reparto = reparto;
+        this.generos = generos;
+        this.imagen = imagen;
+    }
 }

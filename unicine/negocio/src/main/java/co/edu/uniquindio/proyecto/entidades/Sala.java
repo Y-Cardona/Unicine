@@ -4,12 +4,12 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
 @Entity
 public class Sala implements Serializable {
 
@@ -26,4 +26,21 @@ public class Sala implements Serializable {
 
     @Column(name = "cantSillas", columnDefinition = "int default 0", nullable = false)
     private Integer cantSillas;
+
+    @ManyToOne
+    private Teatro teatro;
+
+    @OneToMany(mappedBy = "sala")
+    private List<SillaSala> distribucion;
+
+    @OneToMany(mappedBy = "sala")
+    private List<Funcion> funciones;
+
+    @Builder
+    public Sala(String nombre, Integer cantFilas, Integer cantSillas, Teatro teatro) {
+        this.nombre = nombre;
+        this.cantFilas = cantFilas;
+        this.cantSillas = cantSillas;
+        this.teatro = teatro;
+    }
 }

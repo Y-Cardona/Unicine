@@ -9,7 +9,6 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
 @Entity
 public class Administrador implements Serializable {
 
@@ -23,4 +22,10 @@ public class Administrador implements Serializable {
 
     @Column(name="password", length = 50, nullable = false)
     private String password;
+
+    @Builder
+    public Administrador (String email, String password){
+        this.email = email;
+        this.password = password;
+    }
 }

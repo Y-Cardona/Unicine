@@ -10,7 +10,6 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
 @Entity
 public class Cupon implements Serializable {
 
@@ -19,11 +18,31 @@ public class Cupon implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name="cantidad", columnDefinition = "int default 0", nullable = false)
+    @Column(name="dcto", columnDefinition = "int default 0", nullable = false)
     private Integer dcto;
 
+    @Column(name="vencimiento", nullable = false)
     private LocalDate vencimiento;
 
     @Column(name="estado", length = 1, nullable = false)
     private String estado;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name="criterio", nullable = false)
+    private Criterio criterio;
+
+    @ManyToOne
+    private Cliente cliente;
+
+    @OneToOne(mappedBy = "cupon")
+    private Factura factura;
+
+    @Builder
+    public Cupon (Integer dcto, LocalDate vencimiento, Criterio criterio, Cliente cliente){
+        this.dcto = dcto;
+        this.vencimiento = vencimiento;
+        this.estado = "A";
+        this.criterio = criterio;
+        this.cliente = cliente;
+    }
 }

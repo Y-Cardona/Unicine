@@ -5,12 +5,12 @@ import lombok.*;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
 @Entity
 public class Factura implements Serializable {
 
@@ -28,4 +28,29 @@ public class Factura implements Serializable {
     @Column(name = "fecha", nullable = false)
     private LocalDateTime fecha;
 
+    @ManyToOne
+    private Tarjeta tarjeta;
+
+    @ManyToOne
+    private Cliente cliente;
+
+    @OneToMany(mappedBy = "factura")
+    private List<ConfiFactura> confiFacturaList;
+
+    @OneToMany(mappedBy = "factura")
+    private List<Entrada> entradas;
+
+    @OneToOne
+    private Cupon cupon;
+
+    @Builder
+    public Factura(Integer precioTotal, String qr, LocalDateTime fecha, Tarjeta tarjeta,
+                   Cliente cliente, Cupon cupon) {
+        this.precioTotal = precioTotal;
+        this.qr = qr;
+        this.fecha = fecha;
+        this.tarjeta = tarjeta;
+        this.cliente = cliente;
+        this.cupon = cupon;
+    }
 }

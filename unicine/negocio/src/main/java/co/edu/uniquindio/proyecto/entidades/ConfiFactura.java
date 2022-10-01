@@ -9,7 +9,6 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
 @Entity
 public class ConfiFactura implements Serializable {
 
@@ -23,5 +22,20 @@ public class ConfiFactura implements Serializable {
 
     @Column(name="precio", columnDefinition = "int default 0", nullable = false)
     private Integer precio;
+
+    @ManyToOne
+    private Confiteria confiteria;
+
+    @ManyToOne
+    private Factura factura;
+
+    @Builder
+    public ConfiFactura (Integer cantidad, Integer precio, Confiteria confiteria,
+                         Factura factura){
+        this.cantidad = cantidad;
+        this.precio = precio;
+        this.factura = factura;
+        this.confiteria = confiteria;
+    }
 
 }

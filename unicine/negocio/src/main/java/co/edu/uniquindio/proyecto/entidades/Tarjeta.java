@@ -5,12 +5,12 @@ import lombok.*;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.List;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
 @Entity
 public class Tarjeta implements Serializable {
 
@@ -27,4 +27,18 @@ public class Tarjeta implements Serializable {
 
     @Column(name = "porcentaje", columnDefinition = "int default 5", nullable = false)
     private Integer porcentaje;
+
+    @OneToOne
+    private Cliente cliente;
+
+    @OneToMany(mappedBy = "tarjeta")
+    private List<Factura> facturas;
+
+    @Builder
+    public Tarjeta(LocalDate vigencia, String estado, Integer porcentaje, Cliente cliente) {
+        this.vigencia = vigencia;
+        this.estado = estado;
+        this.porcentaje = porcentaje;
+        this.cliente = cliente;
+    }
 }

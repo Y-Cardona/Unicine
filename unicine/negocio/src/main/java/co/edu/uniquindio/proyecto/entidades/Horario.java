@@ -5,12 +5,13 @@ import lombok.*;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
 @Entity
 public class Horario implements Serializable {
 
@@ -28,6 +29,15 @@ public class Horario implements Serializable {
     @Column(name = "hora", length = 5, nullable = false)
     private String hora;
 
-    //private List<String> dias;
+    //private ArrayList<String> dias;
 
+    @OneToMany(mappedBy = "horario")
+    private List<Funcion> funciones;
+
+    @Builder
+    public Horario(LocalDate desde, LocalDate hasta, String hora) {
+        this.desde = desde;
+        this.hasta = hasta;
+        this.hora = hora;
+    }
 }

@@ -9,7 +9,6 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
 @Entity
 public class Telefono implements Serializable {
 
@@ -21,5 +20,12 @@ public class Telefono implements Serializable {
     @Column(name = "numero", length = 10, nullable = false)
     private String numero;
 
+    @ManyToOne
+    private Cliente cliente;
 
+    @Builder
+    public Telefono(String numero, Cliente cliente) {
+        this.numero = numero;
+        this.cliente = cliente;
+    }
 }

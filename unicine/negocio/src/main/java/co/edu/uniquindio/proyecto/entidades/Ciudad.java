@@ -4,14 +4,14 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
 @Entity
-public class Cuidad implements Serializable {
+public class Ciudad implements Serializable {
 
     @Id
     @EqualsAndHashCode.Include
@@ -20,4 +20,15 @@ public class Cuidad implements Serializable {
 
     @Column(name="nombre", length = 50, nullable = false)
     private String nombre;
+
+    @Builder
+    public Ciudad (String nombre){
+        this.nombre = nombre;
+    }
+
+    @OneToMany(mappedBy = "ciudad")
+    private List<Cliente> clientes;
+
+    @OneToMany(mappedBy = "ciudad")
+    private List<Teatro> teatros;
 }

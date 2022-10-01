@@ -2,11 +2,9 @@ package co.edu.uniquindio.proyecto.entidades;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
@@ -20,4 +18,19 @@ public class SillaSala implements Serializable {
     @EqualsAndHashCode.Include
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
+    @ManyToOne
+    private Sala sala;
+
+    @ManyToOne
+    private Silla silla;
+
+    @OneToMany(mappedBy = "sillaSala")
+    private List<Entrada> entradas;
+
+    @Builder
+    public SillaSala(Sala sala, Silla silla) {
+        this.sala = sala;
+        this.silla = silla;
+    }
 }
