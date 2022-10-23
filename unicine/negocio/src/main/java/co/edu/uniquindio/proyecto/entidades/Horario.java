@@ -10,8 +10,10 @@ import java.util.List;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
+@ToString
 @Entity
 public class Horario implements Serializable {
 
@@ -20,10 +22,10 @@ public class Horario implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "desde", nullable = false)
+    @Column(name = "desde", nullable = false, columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private LocalDate desde;
 
-    @Column(name = "hasta", nullable = false)
+    @Column(name = "hasta", nullable = false, columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private LocalDate hasta;
 
     @Column(name = "hora", length = 5, nullable = false)

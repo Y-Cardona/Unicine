@@ -8,8 +8,10 @@ import java.util.List;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
+@ToString
 @Entity
 public class Pelicula implements Serializable {
 
@@ -39,12 +41,12 @@ public class Pelicula implements Serializable {
     @OneToMany(mappedBy = "pelicula")
     private List<Funcion> funciones;
 
-    @OneToOne
-    private Imagen imagen;
+    @Column(name = "imagen", nullable = false)
+    private String imagen;
 
     @Builder
     public Pelicula(String nombre, String trailer, String sinopsis, String estado, String reparto,
-                    List<Genero> generos, Imagen imagen) {
+                    List<Genero> generos, String imagen) {
         this.nombre = nombre;
         this.trailer = trailer;
         this.sinopsis = sinopsis;

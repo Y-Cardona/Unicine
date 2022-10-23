@@ -8,8 +8,10 @@ import java.util.List;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
+@ToString
 @Entity
 public class Confiteria implements Serializable {
 
@@ -27,11 +29,11 @@ public class Confiteria implements Serializable {
     @OneToMany(mappedBy = "confiteria")
     private List<ConfiFactura> confiFacturaList;
 
-    @OneToOne
-    private Imagen imagen;
+    @Column(name = "imagen", nullable = false)
+    private String imagen;
 
     @Builder
-    public Confiteria(String nombre, Integer precio, Imagen imagen){
+    public Confiteria(String nombre, Integer precio, String imagen){
         this.nombre = nombre;
         this.precio = precio;
         this.imagen = imagen;

@@ -8,8 +8,10 @@ import java.time.LocalDate;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
+@ToString
 @Entity
 public class Cupon implements Serializable {
 

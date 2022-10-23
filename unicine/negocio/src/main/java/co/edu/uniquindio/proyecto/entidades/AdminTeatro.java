@@ -7,8 +7,10 @@ import java.io.Serializable;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
+@ToString
 @Entity
 public class AdminTeatro implements Serializable {
 

@@ -9,8 +9,10 @@ import java.util.List;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
+@ToString
 @Entity
 public class Factura implements Serializable {
 
@@ -25,7 +27,7 @@ public class Factura implements Serializable {
     @Column(name = "qr", nullable = false)
     private String qr;
 
-    @Column(name = "fecha", nullable = false)
+    @Column(name = "fecha", nullable = false, columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private LocalDateTime fecha;
 
     @ManyToOne
@@ -44,11 +46,11 @@ public class Factura implements Serializable {
     private Cupon cupon;
 
     @Builder
-    public Factura(Integer precioTotal, String qr, LocalDateTime fecha, Tarjeta tarjeta,
+    public Factura(Integer precioTotal, String qr, Tarjeta tarjeta,
                    Cliente cliente, Cupon cupon) {
         this.precioTotal = precioTotal;
         this.qr = qr;
-        this.fecha = fecha;
+        this.fecha = LocalDateTime.now();
         this.tarjeta = tarjeta;
         this.cliente = cliente;
         this.cupon = cupon;

@@ -9,8 +9,10 @@ import java.util.List;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
+@ToString
 @Entity
 public class Tarjeta implements Serializable {
 

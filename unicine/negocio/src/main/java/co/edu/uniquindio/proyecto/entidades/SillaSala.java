@@ -8,9 +8,10 @@ import java.util.List;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
+@ToString
 @Entity
 public class SillaSala implements Serializable {
 

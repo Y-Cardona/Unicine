@@ -1,4 +1,9 @@
 package co.edu.uniquindio.proyecto.repositorios;
 
-public interface ConfiteriaRepo {
+import co.edu.uniquindio.proyecto.entidades.Confiteria;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ConfiteriaRepo extends JpaRepository <Confiteria, Integer> {
 }

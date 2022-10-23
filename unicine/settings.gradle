@@ -1,3 +1,5 @@
 rootProject.name = 'unicine'
 include 'negocio'
+include 'negocio:test'
+findProject(':negocio:test')?.name = 'test'
 
